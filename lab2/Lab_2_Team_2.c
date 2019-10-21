@@ -1,7 +1,7 @@
 /* Luke Evans, David Howick, Kenneth Smith, William Scott, Michael Cryer */
 /* Lab_2_Team_2.c - main, signaler, waiter */
 
-#include <Xinu.h>
+#include <xinu.h>
 
 void signaler(), waiter();
 int  sem_start_value = 20, count_start = 0, count_stop = 2000;
