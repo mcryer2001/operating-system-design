@@ -33,6 +33,7 @@ void waiter(pid32 signaler_pid)
     wait(sem);
   }
   kill(signaler_pid);
+  semdelete(sem);
 }
 
 /*------------------------------------------------------------------------
