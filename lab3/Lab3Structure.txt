@@ -1,0 +1,6 @@
+xinu-x86-vm/compile/Makefile
+xinu-x86-vm/system/foreverRun.c
+xinu-x86-vm/shell/shell.c
+xinu-x86-vm/shell/shprototypes.h
+xinu-x86-vm/shell/xsh_newproc.c
+xinu-x86-vm/include/prototypes.h
