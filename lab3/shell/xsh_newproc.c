@@ -16,6 +16,7 @@ shellcmd xsh_newproc(int nargs, char *args[])
 		p = defaultPrio;
 	}
 	else if (nargs == 2) {
+		/*
 		chprio = args[1];
 		ch = *chprio++;
 		p = 0;
@@ -28,6 +29,8 @@ shellcmd xsh_newproc(int nargs, char *args[])
 			p = 10 * p + (ch - '0');
 			ch = *chprio++;
 		}
+		*/
+		p = atoi(args[1]);
 	}
 	else {
 		kprintf("Too many arguments \n");
