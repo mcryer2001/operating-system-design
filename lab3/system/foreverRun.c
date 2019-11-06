@@ -1,8 +1,12 @@
 #include <xinu.h>
 
-void foreverRun(void)
+void foreverRun(pri16 p)
 {
-	kprintf("foreverRun is Running PID %d\n", getpid());
+	pid32 currpid;
 
+	currpid = getpid();
+
+	kprintf("foreverRun is Running PID %d with Priority %d\n", currpid, p);
+	chprio(currpid, p);
 	while(1) {}
 }
