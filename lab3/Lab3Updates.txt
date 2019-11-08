@@ -1,0 +1,12 @@
+Changes:
+/system/foreverRun.c
+/shell/xsh_newproc.c
+/include/prototypes.h
+
+Changes: 10/29/2019 6:12 PM
+Cleaned up code
+/system/foreverRun.c
+/shell/xsh_newproc.c
+
+Changes: 11/2/2019 9:46 AM
+/system/foreverRun.c
