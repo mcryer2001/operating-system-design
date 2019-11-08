@@ -1,5 +1,5 @@
 /* in file foreverRun.c */
-extern void foreverRun(void);
+extern void foreverRun(pri16);
 
 /* in file addargs.c */
 extern	status	addargs(pid32, int32, int32[], int32,char *, void *);

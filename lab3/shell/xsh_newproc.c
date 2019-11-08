@@ -1,35 +1,37 @@
 /* xsh_newproc */
 #include <xinu.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 /* ---------------------------------------------------------------------------
 * xsh_newproc - shell command to create a new process with priority or default 
 * ---------------------------------------------------------------------------- 
 */
 shellcmd xsh_newproc(int nargs, char *args[])
 {
-	int32 p;
-	char ch;
-	char* chprio;
+	pri16 p;
+	char* next;
+	int length;
+	int i;
 	pid32 pid;
-	int32 defaultPrio = 20;
+	pri16 defaultPrio = INITPRIO;
+	pri16 startPrio = 90;
 
 	if (nargs == 1) {
 		p = defaultPrio;
 	}
 	else if (nargs == 2) {
-		/*
-		chprio = args[1];
-		ch = *chprio++;
-		p = 0;
+		/* Argument error check code.  THIS SHOULD WORK as Xinu does have the isdigit macro in ctype.h */
+		length = strlen(args[1]);
+		next = args[1];
 
-		while (ch != NULLCH) {
-			if ((ch < '0') || (ch > '9')) {
-				kprintf("%s: non-digit in p \n", args[1]);
+		for (i = 0; i < length; i++) {
+			if (!isdigit(next[i])) {
+				kprintf ("'%s' is not valid \n", args[1]);
 				return 1;
 			}
-			p = 10 * p + (ch - '0');
-			ch = *chprio++;
 		}
-		*/
 		p = atoi(args[1]);
 	}
 	else {
@@ -37,7 +39,7 @@ shellcmd xsh_newproc(int nargs, char *args[])
 		return 1;
 	}
 
-	pid = create(foreverRun, 1024, p, "Test", 0);
+	pid = create(foreverRun, 1024, startPrio, "Test", 1, p);
 	resume(pid);
 	return 0;
 }
