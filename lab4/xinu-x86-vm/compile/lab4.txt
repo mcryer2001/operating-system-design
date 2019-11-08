@@ -1,0 +1,591 @@
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #14 (root@develop-end) Tue Nov 5 11:41:21 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26865 bytes of Xinu code.
+           [0x00000000 to 0x000068F0]
+     16795 bytes of data.
+           [0x000068F1 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ lab^I     ?
+
+shell commands are:
+
+argecho      devdump      help         memstat      ?            
+cat          echo         kill         ps           lab4Demo     
+clear        exit         memdump      sleep        
+xsh $ lab4Demo 40
+b1 a1 b2 
+a2 
+b1 a1 b1 b2 a1 a2 b2 
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #15 (root@develop-end) Tue Nov 5 11:44:51 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26853 bytes of Xinu code.
+           [0x00000000 to 0x000068E4]
+     16807 bytes of data.
+           [0x000068E5 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+0
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ command 0 not found
+xsh $ lab4Demo
+xsh $ ?
+
+shell commands are:
+
+argecho      devdump      help         memstat      ?            
+cat          echo         kill         ps           lab4Demo     
+clear        exit         memdump      sleep        
+xsh $ lab4Demo 10
+b1 a1 b2 
+a2 
+b1 a1 b1 b2 a1 a2 b2 
+^CAzBooting Xinu on i386-pc...
+
+(x86 Xinu) #16 (root@develop-end) Tue Nov 5 11:49:06 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26869 bytes of Xinu code.
+           [0x00000000 to 0x000068F4]
+     16791 bytes of data.
+           [0x000068F5 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ lab5 5 4Demo 10
+b1 a1 b2 a2 
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #17 (root@develop-end) Tue Nov 5 11:55:32 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26881 bytes of Xinu code.
+           [0x00000000 to 0x00006900]
+     16779 bytes of data.
+           [0x00006901 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+0
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ command 0 not found
+xsh $ lab4Demo 14
+14
+b1 a1 b2 a2 
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #17 (root@develop-end) Tue Nov 5 11:55:32 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26881 bytes of Xinu code.
+           [0x00000000 to 0x00006900]
+     16779 bytes of data.
+           [0x00006901 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ ps
+Pid Name             State Prio Ppid Stack Base Stack Ptr  Stack Size
+--- ---------------- ----- ---- ---- ---------- ---------- ----------
+  0 prnull           ready    0    0 0x00FFBFFC 0x00FFFF04      16384
+  1 Main process     recv    20    0 0x00FF7FFC 0x00FF7F14      65536
+  2 shell            recv    50    1 0x00FE7FFC 0x00FE7C8C       8192
+  3 ps               curr    20    2 0x00FE5FFC 0x00FE5DE8       8192
+xsh $ Booting Xinu on i386-pc...
+
+(x86 Xinu) #18 (root@develop-end) Tue Nov 5 12:02:53 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26881 bytes of Xinu code.
+           [0x00000000 to 0x00006900]
+     16779 bytes of data.
+           [0x00006901 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #18 (root@develop-end) Tue Nov 5 12:02:53 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26881 bytes of Xinu code.
+           [0x00000000 to 0x00006900]
+     16779 bytes of data.
+           [0x00006901 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #19 (root@develop-end) Tue Nov 5 12:06:36 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26881 bytes of Xinu code.
+           [0x00000000 to 0x00006900]
+     16779 bytes of data.
+           [0x00006901 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ lab4Doem    mo    Demo 10
+10
+b1 a1 b2 a2 
+b1 b2 a1 
+AT S7=45 S0=0 L1 V1 X4Booting Xinu on i386-pc...
+
+(x86 Xinu) #20 (root@develop-end) Tue Nov 5 12:11:42 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26901 bytes of Xinu code.
+           [0x00000000 to 0x00006914]
+     16759 bytes of data.
+           [0x00006915 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ lab4Demo 13 45  5
+15
+b1 a1 b2 a2 
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #21 (root@develop-end) Tue Nov 5 12:15:11 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26901 bytes of Xinu code.
+           [0x00000000 to 0x00006914]
+     16759 bytes of data.
+           [0x00006915 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #21 (root@develop-end) Tue Nov 5 12:15:11 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26901 bytes of Xinu code.
+           [0x00000000 to 0x00006914]
+     16759 bytes of data.
+           [0x00006915 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ lab4Demo 10
+10
+b1 a1 b2 a2 
+
+X4 &c1 E1 Q0
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #24 (root@develop-end) Tue Nov 5 12:21:00 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26913 bytes of Xinu code.
+           [0x00000000 to 0x00006920]
+     16747 bytes of data.
+           [0x00006921 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #24 (root@develop-end) Tue Nov 5 12:21:00 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26913 bytes of Xinu code.
+           [0x00000000 to 0x00006920]
+     16747 bytes of data.
+           [0x00006921 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ lab5 5D  4Demo 10
+10
+b1 a1 b2 a2 
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #24 (root@develop-end) Tue Nov 5 12:21:00 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26913 bytes of Xinu code.
+           [0x00000000 to 0x00006920]
+     16747 bytes of data.
+           [0x00006921 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]Booting Xinu on i386-pc...
+
+(x86 Xinu) #25 (root@develop-end) Tue Nov 5 12:31:10 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26913 bytes of Xinu code.
+           [0x00000000 to 0x00006920]
+     16747 bytes of data.
+           [0x00006921 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #25 (root@develop-end) Tue Nov 5 12:31:10 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26913 bytes of Xinu code.
+           [0x00000000 to 0x00006920]
+     16747 bytes of data.
+           [0x00006921 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ lab4De^I   emo^I   10
+10
+b1 a1 b2 a2 
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #27 (root@develop-end) Tue Nov 5 12:39:08 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26909 bytes of Xinu code.
+           [0x00000000 to 0x0000691C]
+     16783 bytes of data.
+           [0x0000691D to 0x0000AAAB]
+    611664 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]Booting Xinu on i386-pc...
+
+(x86 Xinu) #27 (root@develop-end) Tue Nov 5 12:39:08 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26909 bytes of Xinu code.
+           [0x00000000 to 0x0000691C]
+     16783 bytes of data.
+           [0x0000691D to 0x0000AAAB]
+    611664 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ lab4Dem^I  o 10
+10
+b1 a1 b2 
+a2 
+printed 
+printed 
+b1 a1 b1 b2 a1 a2 b2 
+^ZBooting Xinu on i386-pc...
+
+(x86 Xinu) #28 (root@develop-end) Tue Nov 5 12:44:22 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26929 bytes of Xinu code.
+           [0x00000000 to 0x00006930]
+     16763 bytes of data.
+           [0x00006931 to 0x0000AAAB]
+    611664 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ lab4Demo 1- 0
+10
+b1 a1 b2 
+a2 
+printed 
+printed 
+b1 a1 b1 b2 a2 a1 b2 
+AzBooting Xinu on i386-pc...
+
+(x86 Xinu) #29 (root@develop-end) Tue Nov 5 12:46:29 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26981 bytes of Xinu code.
+           [0x00000000 to 0x00006964]
+     16711 bytes of data.
+           [0x00006965 to 0x0000AAAB]
+    611664 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #29 (root@develop-end) Tue Nov 5 12:46:29 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26981 bytes of Xinu code.
+           [0x00000000 to 0x00006964]
+     16711 bytes of data.
+           [0x00006965 to 0x0000AAAB]
+    611664 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+
+
+------------------------------------------
+   __    __   _____    _   _    _    _    
+   \ \  / /  |__ __|  | \ | |  | |  | |   
+    \ \/ /     | |    |  \| |  | |  | |   
+    / /\ \    _| |_   | \   |  | |  | |   
+   / /  \ \  |     |  | | \ |  \  --  /   
+   --    --   -----    -   -     ----     
+------------------------------------------
+
+
+Welcome to Xinu!
+
+
+xsh $ lab4Demo 5
+5
+b1 a1 b2 a2 
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #30 (root@develop-end) Tue Nov 5 13:05:40 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26769 bytes of Xinu code.
+           [0x00000000 to 0x00006890]
+     16891 bytes of data.
+           [0x00006891 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]Booting Xinu on i386-pc...
+
+(x86 Xinu) #31 (root@develop-end) Tue Nov 5 13:07:07 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26769 bytes of Xinu code.
+           [0x00000000 to 0x00006890]
+     16891 bytes of data.
+           [0x00006891 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #31 (root@develop-end) Tue Nov 5 13:07:07 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26769 bytes of Xinu code.
+           [0x00000000 to 0x00006890]
+     16891 bytes of data.
+           [0x00006891 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
+Booting Xinu on i386-pc...
+
+(x86 Xinu) #32 (root@develop-end) Tue Nov 5 13:08:22 EST 2019
+
+  16777216 bytes physical memory.
+           [0x00000000 to 0x00FFFFFF]
+     26769 bytes of Xinu code.
+           [0x00000000 to 0x00006890]
+     16891 bytes of data.
+           [0x00006891 to 0x0000AA8B]
+    611696 bytes of heap space below 640K.
+  15728640 bytes of heap space above 1M.
+           [0x00100000 to 0x00FFFFFF]
