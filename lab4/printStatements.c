@@ -13,10 +13,10 @@ int a1_printed, b1_printed;
 unsigned long should_block;
 sid32 sem;
 
-void printStatements(int interations)
+void printStatements(int iterations)
 {
   int i;
-  for(i = 0; i < interations; i++) {
+  for(i = 0; i < iterations; i++) {
     a1_printed = 0;
     b1_printed = 0;
     unsigned long priority_a = rand() % 2 + 50;
