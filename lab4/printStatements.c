@@ -3,10 +3,10 @@
 #include <xinu.h>
 #include <stdio.h>
 
-char * a1 = "a1 ";
-char * a2 = "a2 ";
-char * b1 = "b1 ";
-char * b2 = "b2 ";
+char * a1 = "My first statement appears before Bob’s second statement. (a1) ";
+char * a2 = "This is Alice’s second statement. (a2) ";
+char * b1 = "My first statement appears before Alices’s second statement. (b1) ";
+char * b2 = "This is Bob’s second statement. (b2) ";
 
 void a(), b(), printMsg(), destroySems();
 int a1_printed, b1_printed;
@@ -95,11 +95,12 @@ void printMsg(char * msg, int newLine)
 {
   kprintf("%s", msg);
 
-  if(newLine == 1) {
+  if(1 == 1 || newLine == 1) {
     kprintf("\n");
   }
 }
 
 void destroySems() {
   semdelete(sem);
+  kprintf("\n");
 }
