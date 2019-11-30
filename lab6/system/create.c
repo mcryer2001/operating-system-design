@@ -4,8 +4,6 @@
 
 local	int newpid();
 
-#define NUM_VALID_MESSAGES 5
-
 #define	roundew(x)	( (x+3)& ~0x3)
 
 /*------------------------------------------------------------------------
