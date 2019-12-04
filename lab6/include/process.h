@@ -1,3 +1,4 @@
+cat include/process.h
 /* process.h - isbadpid */
 
 #define NMSG            5      /* max number messages to be handled   */
@@ -45,9 +46,6 @@
 
 #define NDESC		5	/* must be odd to make procent 4N bytes	*/
 
-#define MSGLIMIT    5   /* added the following code to the include/process.h */
-                        /* file in order to give processes the ability to store a buffer of messages passed */
-
 /* Definition of the process table (multiple of 32 bits) */
 
 struct procent {		/* entry in the process table		*/
@@ -63,9 +61,9 @@ struct procent {		/* entry in the process table		*/
 	bool8	prhasmsg;	/* nonzero iff msg is valid		*/
 	int16	prdesc[NDESC];	/* device descriptors for process	*/
 	int16	msgcounter;	/* counter for process messages 	*/
-	umsg32 messages[MSGLIMIT]; /* array of messages */ 
-	int8 msgcount; /* number of messages */
-	int8 nextMsgIndex; /* place to put next message */
+	umsg32 messages[NMSG];  /* array of messages                    */ 
+	int8 msgcount;          /* number of messages                   */
+	int8 nextMsgIndex;      /* place to put next message            */
 };
 
 /* Marker for the top of a process stack (used to help detect overflow)	*/
