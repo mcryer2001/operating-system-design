@@ -1,39 +1,40 @@
-/* receivek.c - receivek */
-
+/*receivek.c - receivek */
 #include <xinu.h>
 
 /*------------------------------------------------------------------------
- *  receivek  -  wait for a message and return the message to the caller
+ *receivek  -  wait for a message and return the message to the caller
  *------------------------------------------------------------------------
  */
-umsg32	receivek(void)
+umsg32 receivek(void)
 {
-	intmask	mask;			/* saved interrupt mask		*/
-	struct	procent *prptr;		/* ptr to process' table entry	*/
-	umsg32	msg;			/* message to return		*/
+	intmask mask;          /* saved interrupt mask		*/
+	struct procent *prptr; /* ptr to process' table entry	*/
+	umsg32 msg;            /* message to return		*/
 
 	mask = disable();
 	prptr = &proctab[currpid];
-	//if (prptr->prhasmsg == FALSE) {
-	if (prptr->msgcounter == 0) {
+
+	if (prptr->msgcounter == 0)
+	{
 		prptr->prstate = PR_RECV;
-		resched();		/* block until message arrives	*/
+		resched();          /* block until message arrives */
 	}
 
-	msg = prptr->messages[0];
-	if(prptr->nextMsgIndex == NMSG) {
+	msg = prptr->messages[0];   /* retrieve message            */
+
+	if (prptr->nextMsgIndex == NMSG)
+	{
 		prptr->nextMsgIndex--;
 		shiftMessages(prptr, prptr->nextMsgIndex++);
 	}
 	prptr->msgcounter--;
 
-	//msg = prptr->prmsg;		/* retrieve message		*/
-	prptr->prhasmsg = FALSE;	/* reset message flag		*/
+	prptr->prhasmsg = FALSE;    /* reset message flag         */
 	restore(mask);
 	return msg;
 }
 
-void shiftMessages(struct procent *prptr, int pos) 
+void shiftMessages(struct procent *prptr, int pos)
 {
 	int i = 1;
 	for (i; i <= pos; i++)
