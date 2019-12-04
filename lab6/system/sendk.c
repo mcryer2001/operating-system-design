@@ -22,7 +22,7 @@ syscall	sendk(
 
 	prptr = &proctab[pid];
 
-        prptr->msgcounter++;
+	prptr->msgcounter++;
 
 	//if ((prptr->prstate == PR_FREE) || prptr->prhasmsg) {
 	if (prptr->prstate == PR_FREE) {
@@ -30,11 +30,16 @@ syscall	sendk(
 		return SYSERR;
 	}
 
-        if (prptr->msgcounter > NMSG)
-                sprintf(msg,"Error processing message #%d\n", prptr->msgcounter);
- 
-	prptr->prmsg = msg;		/* deliver message		*/
-	prptr->prhasmsg = TRUE;		/* indicate message is waiting	*/
+  if (prptr->msgcounter > NMSG) {
+  	prptr->msgcounter--;
+    kprintf("%s! Original Message: %s\n", "Error processing message", msg);
+  } else {
+  	kprintf("Processing message: %s\n", msg);
+	 	prptr->messages[prptr->nextMsgIndex] = msg;
+	 	prptr->nextMsgIndex++;
+		prptr->prmsg    = msg;		/* deliver message		*/
+		prptr->prhasmsg = TRUE;		/* indicate message is waiting	*/
+	}
 
 	/* If recipient waiting or in timed-wait make it ready */
 

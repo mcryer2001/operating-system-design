@@ -15,12 +15,31 @@ umsg32	receivek(void)
 	mask = disable();
 	prptr = &proctab[currpid];
 	//if (prptr->prhasmsg == FALSE) {
-	if (prptr->msgcounter > NMSG*2) {
+	if (prptr->msgcounter == 0) {
 		prptr->prstate = PR_RECV;
 		resched();		/* block until message arrives	*/
 	}
-	msg = prptr->prmsg;		/* retrieve message		*/
+
+	msg = prptr->messages[0];
+	if(prptr->nextMsgIndex == NMSG) {
+		prptr->nextMsgIndex--;
+		shiftMessages(prptr, prptr->nextMsgIndex++);
+	}
+	prptr->msgcounter--;
+
+	//msg = prptr->prmsg;		/* retrieve message		*/
 	prptr->prhasmsg = FALSE;	/* reset message flag		*/
 	restore(mask);
 	return msg;
+}
+
+void shiftMessages(struct procent *prptr, int pos) 
+{
+	int i = 1;
+	for (i; i <= pos; i++)
+	{
+		int newpos = i - 1;
+		prptr->messages[newpos] = prptr->messages[i];
+	}
+	prptr->messages[pos] = NULL;
 }

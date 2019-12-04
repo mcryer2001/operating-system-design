@@ -65,6 +65,7 @@ struct procent {		/* entry in the process table		*/
 	int16	msgcounter;	/* counter for process messages 	*/
 	umsg32 messages[MSGLIMIT]; /* array of messages */ 
 	int8 msgcount; /* number of messages */
+	int8 nextMsgIndex; /* place to put next message */
 };
 
 /* Marker for the top of a process stack (used to help detect overflow)	*/
